@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'flex-start',
-    backgroundColor: '#ADD8E6',
+    backgroundColor: '#36588C',
     paddingTop: 20,
   },
   title: {
@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: -50,
     paddingTop: 150,
+    color: '#FFCBA5',
 
   },
   description:{
@@ -88,9 +89,10 @@ const styles = StyleSheet.create({
     position: 'top',
     fontWeight: 'bold',
     fontStyle: 'italic',
+    color:'#FFCBA5',
   },
   button: {
-    backgroundColor: '#ADD8E6',
+    backgroundColor: '#36588C',
     padding: 10,
     borderRadius: 10,
     margin: 0,
@@ -107,16 +109,17 @@ const styles = StyleSheet.create({
   input: {
     height: 50,
     width: '65%',
-    borderColor: 'black',
+    borderColor: '#FFCBA5',
     borderWidth: 1,
     marginTop: 20,
     paddingLeft: 15,
-    color: 'black',
+    color: '#FFCBA5',
   },
   buttonText: {
-    color: 'black',
+    color: '#FFCBA5',
     fontWeight: 'bold',
-    fontSize: 40,
+    fontSize: 30,
+    
 
   },
 });
