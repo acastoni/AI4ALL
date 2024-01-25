@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { AppRegistry, View, Text, Image, StyleSheet, Button, TextInput, TouchableOpacity } from 'react-native';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faRightToBracket, icon } from '@fortawesome/free-solid-svg-icons';
 
 const App = () => {
   const [username, setUsername] = useState('');
@@ -58,7 +60,7 @@ const App = () => {
           </TouchableOpacity>
       ) : (
         <TouchableOpacity style={styles.button} onPress={handleLogin}>
-          <Text style={styles.buttonText}>Login</Text>
+          <Text style={styles.buttonText}>Login<FontAwesomeIcon icon={faRightToBracket} /></Text>
         </TouchableOpacity>
       )}
       <TouchableOpacity style={styles.button} onPress={() => setIsRegistering(!isRegistering)}>
@@ -86,7 +88,6 @@ const styles = StyleSheet.create({
   },
   description:{
     fontSize: 20,
-    position: 'top',
     fontWeight: 'bold',
     fontStyle: 'italic',
     color:'#FFCBA5',
