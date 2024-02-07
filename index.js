@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AppRegistry, View, Text, Image, StyleSheet, Button, TextInput, TouchableOpacity } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faRightToBracket, icon } from '@fortawesome/free-solid-svg-icons';
+import { ImageBackground } from 'react-native';
 
 const App = () => {
   const [username, setUsername] = useState('');
@@ -19,27 +20,28 @@ const App = () => {
   };
 
   return (
+    
     <View style={styles.container}>
-      <Text style={styles.title}>Go</Text>
-      <Text style={styles.description}>Your fitness wonderland</Text>
+      <Text style={styles.title}>Mu</Text>
+      <Text style={styles.description}>Music Recommendations</Text>
       {isRegistering && (
-        <>
-          <TextInput
-            style={styles.input}
-            placeholder="Full Name"
-            value={fullName}
-            onChangeText={setFullName}
-          />
-          <TextInput
-            style={styles.input}
-            placeholder="Email"
-            value={email}
-            onChangeText={setEmail}
-            keyboardType="email-address"
-            autoCapitalize="none"
-          />
-        </>
-      )}
+  <>
+    <TextInput
+      style={styles.input}
+      placeholder="Full Name"
+      value={fullName}
+      onChangeText={setFullName}
+    />
+    <TextInput
+      style={styles.input}
+      placeholder="Email"
+      value={email}
+      onChangeText={setEmail}
+      keyboardType="email-address"
+      autoCapitalize="none"
+    />
+  </>
+)}
       <TextInput
         style={styles.input}
         placeholder="Username"
